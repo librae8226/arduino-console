@@ -7,9 +7,6 @@ Originally ported from Ousia console. http://ousia.accrete.org/
 * Arguments passing through
 * Simply extendable
 
-## TODO
-It would help a lot if anyone can pack it to be an Arduino Library.
-
 ## Running Demo
 ```
 console starts...
@@ -33,3 +30,5 @@ argv[2]: param2
 argc: 3
 cmd_debug
 ```
+## TODO
+It would help a lot if anyone can pack it to be an Arduino Library.
