@@ -1,6 +1,6 @@
 # arduino-console
-A simple console for Arduino.
-Ported from Ousia console. http://ousia.accrete.org/
+A simple console for Arduino.<br>
+Originally ported from Ousia console. http://ousia.accrete.org/
 
 ## TODO
 It would help a lot if anyone can pack it to be an Arduino Library.
