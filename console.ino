@@ -3,6 +3,9 @@
 #include "list.h"
 #include "console.h"
 
+
+#define SERIAL_ID		"DB0123456789"
+
 #define MAX_ARGV_ENTRIES	4
 
 typedef int (*cmd_fn_type)(int argc, char **argv);
@@ -30,6 +33,14 @@ const struct cmd_handle hcmd_arr[] = {
 	{
 		"debug",
 		cmd_debug,
+	},
+	{
+		"ID",
+		cmd_get_id,
+	},
+	{
+		"TMP",
+		cmd_get_temp,
 	},
 	{
 		NULL,
@@ -67,6 +78,19 @@ static int cmd_debug(int argc, char **argv)
 	return 0;
 }
 
+static int cmd_get_id(int argc, char **argv)
+{
+	os_printf("ID:%s", SERIAL_ID);
+	Serial.println("");
+	return 0;
+}
+
+static int cmd_get_temp(int argc, char **argv)
+{
+	os_printf("TMP:11.1;22.2;33.3;44.4;55.5;66.6;77.7;88.8");
+	Serial.println("");
+	return 0;
+}
 
 static void __cmd_char_push(struct console_cmd *conc, char ch)
 {
