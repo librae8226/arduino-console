@@ -80,15 +80,13 @@ static int cmd_debug(int argc, char **argv)
 
 static int cmd_get_id(int argc, char **argv)
 {
-	os_printf("ID:%s", SERIAL_ID);
-	Serial.println("");
+	os_printf("ID:%s\n\r", SERIAL_ID);
 	return 0;
 }
 
 static int cmd_get_temp(int argc, char **argv)
 {
-	os_printf("TMP:11.1;22.2;33.3;44.4;55.5;66.6;77.7;88.8");
-	Serial.println("");
+	os_printf("TMP:11.1;22.2;33.3;44.4;55.5;66.6;77.7;88.8\n\r");
 	return 0;
 }
 
