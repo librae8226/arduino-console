@@ -1,5 +1,5 @@
 # arduino-console
-A simple potable console module for Arduino.<br>
+A simple portable console module for Arduino.<br>
 Originally ported from Ousia console. http://ousia.accrete.org/
 
 ## Features
